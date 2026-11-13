@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#4b0718">
+  <title>Our Wedding | Ayesha & Hamza</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class=" bg-gradient-to-br from-[#21030b] via-wine to-[#6b1027] font-sans font-light text-ivory">
+  <!-- Click the envelope image to reveal the invitation -->
+  <section id="envelope-screen" class="fixed inset-0 z-[100] flex min-h-screen items-center justify-center overflow-hidden bg-gradient-to-br from-[#21030b] via-wine to-[#6b1027] px-5 text-center" aria-label="Wedding invitation envelope">
+    <div class="envelope-image-wrap">
+      <p class="envelope-heading ">You're cordially invited</p>
+      <button id="open-invitation" class="envelope-button" aria-label="Open wedding invitation">
+        <img class="envelope-image" src="images/envelope.jpeg" alt="Open the wedding invitation">
+      </button>
+      <p class="envelope-instruction">Tap the envelope to open</p>
+    </div>
+  </section>
+  <div id="sparkles" class="pointer-events-none fixed inset-0 z-20 overflow-hidden" aria-hidden="true"></div>
+  <div id="confetti" class="pointer-events-none fixed inset-0 z-40 overflow-hidden" aria-hidden="true"></div>
+  <nav class="sticky top-0 z-30 border-b border-champagne/30 bg-[#21030b]/90 px-5 py-4 backdrop-blur-xl md:px-16">
+    <div class="mx-auto flex max-w-7xl items-center justify-between">
+      <a href="#home" class="font-display text-2xl tracking-wide text-champagneLight">Together <span class="text-ivory">♡</span> Forever</a>
+      <button id="menu-toggle" class="text-2xl text-champagne md:hidden" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <div id="nav-links" class="nav-menu hidden items-center gap-8 text-[10px] uppercase tracking-[.18em] md:flex">
+        <a class="text-champagneLight" href="#story">Our Story</a>
+        <a class="text-champagneLight" href="#details">The Details</a>
+        <a class="text-champagneLight" href="#countdown">Countdown</a>
+        <a class="border border-champagne px-5 py-3 text-champagneLight " href="#rsvp">RSVP</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section id="home" class="hero relative flex min-h-[88vh] flex-col items-center justify-center overflow-hidden bg-gradient-to-br from-wineLight via-wine to-wineDark px-5 py-24 text-center">
+      <p class="reveal text-[10px] tracking-[.3em] text-champagne">WITH THE BLESSINGS OF OUR FAMILIES</p>
+      <p class="reveal mt-6 font-script text-4xl text-champagneLight">Together with our families</p>
+      <h1 class="hero-names reveal mt-2 font-display text-7xl font-normal leading-none drop-shadow-2xl sm:text-8xl md:text-[8rem]">Ayesha <span class="hero-ampersand font-script"> &amp; </span> Hamza</h1>
+      
+      <p class="reveal font-display text-2xl leading-relaxed text-[#f3e5d7]">joyfully invite you to celebrate<br>the beginning of our forever</p>
+      <p class="reveal mt-7 text-[9px] leading-7 tracking-[.18em] text-champagneLight sm:text-[10px]">FRIDAY <span class="px-2 text-champagne">·</span> 10 SEPTEMBER 2027 <span class="px-2 text-champagne">·</span> 7:00 PM</p>
+      <a href="#details" class="gold-button reveal mt-7 inline-flex items-center gap-4 bg-gradient-to-r from-champagneLight to-champagne px-6 py-4 text-[10px] font-medium uppercase tracking-[.15em] text-wineDark shadow-glow">Discover the Celebration <span>↓</span></a>
+      <p class="absolute bottom-6 px-3 text-[8px] tracking-[.25em] text-champagneLight">A DAY TO REMEMBER · A LOVE TO LAST FOREVER</p>
+    </section>
+
+    <section id="story" class="bg-ivory px-6 py-24 text-center md:py-28">
+      <p class="text-[10px] tracking-[.3em] text-[#a77b43]">A BEAUTIFUL NEW CHAPTER</p>
+      <h2 class="mt-4 font-display text-5xl font-medium md:text-6xl">Two hearts, <em class="font-script text-[#a87942]">one beautiful</em> journey</h2>
+      <p class="mx-auto mt-6 max-w-xl text-sm leading-8 text-[#6f5a55]">With hearts full of love and gratitude, we invite you to share in the joy of our wedding celebration. Your presence will make our special day even more meaningful.</p>
+      <figure class="story-photo mx-auto mt-10 max-w-4xl">
+        <img src="images/bride-groom.jpg" alt="Bride and groom sharing a romantic wedding moment" loading="lazy">
+      </figure>
+      <div class="my-8 tracking-[.7em] text-[#a77b43]">♡ <span class="text-2xl">♡</span> ♡</div>
+      <p class="font-script text-4xl text-[#a87942]">We can't wait to celebrate with you</p>
+    </section>
+
+    <section id="details" class="bg-gradient-to-b from-ivory to-[#f4e8d8] px-6 py-24 text-center text-wineDark md:py-28">
+      <p class="text-[10px] tracking-[.3em] text-[#a77b43]">SAVE THE DATE</p>
+      <h2 class="mt-4 font-display text-5xl font-medium text-white md:text-6xl">The <em class="font-script text-[#a87942]">Celebration</em></h2>
+      <div class="mx-auto mt-12 grid max-w-4xl gap-8 md:grid-cols-2">
+        <article class="detail-card border border-champagne bg-[#f4e8d8] px-7 py-10 outline outline-1 outline-offset-4 outline-champagne cursor-pointer">
+          <div class="event-icon mb-4 text-3xl">✧</div><p class="event-label text-[9px] tracking-[.25em]">THE CEREMONY</p>
+          <h3 class="event-title mt-2 font-display text-5xl">Nikah</h3><div class="tiny-line"></div>
+          <p class="event-time text-xs leading-7">Friday, 10 September 2027<br>7:00 PM onwards</p>
+          <p class="event-venue mt-4 text-sm font-semibold">The Royal Marquee</p><p class="event-location text-xs leading-6">Karachi, Pakistan</p>
+          <a class="event-link mt-3 inline-block border-b pb-1 text-[10px] uppercase tracking-widest" href="https://www.google.com/maps/search/?api=1&amp;query=The%20Royal%20Marquee%2C%20Karachi%2C%20Pakistan" target="_blank" rel="noopener noreferrer">View location on map ↗</a>
+          <a class="event-link mt-5 inline-block border-b pb-1 text-[10px] uppercase tracking-widest hover:tracking-[.2em]" href="#rsvp">Kindly join us ↗</a>
+        </article>
+        <article class="detail-card border border-champagne bg-[#f4e8d8] px-7 py-10 outline outline-1 outline-offset-4 outline-champagne cursor-pointer">
+          <div class="event-icon mb-4 text-3xl">❀</div><p class="event-label text-[9px] tracking-[.25em]">THE FESTIVITY</p>
+          <h3 class="event-title mt-2 font-display text-5xl">Reception</h3><div class="tiny-line"></div>
+          <p class="event-time text-xs leading-7">Friday, 10 September 2027<br>8:30 PM onwards</p>
+          <p class="event-venue mt-4 text-sm font-semibold">The Royal Marquee</p><p class="event-location text-xs leading-6">Karachi, Pakistan</p>
+          <a class="event-link mt-3 inline-block border-b pb-1 text-[10px] uppercase tracking-widest" href="https://www.google.com/maps/search/?api=1&amp;query=The%20Royal%20Marquee%2C%20Karachi%2C%20Pakistan" target="_blank" rel="noopener noreferrer">View location on map ↗</a>
+          <a class="event-link mt-5 inline-block border-b pb-1 text-[10px] uppercase tracking-widest hover:tracking-[.2em]" href="#rsvp">Celebrate with us ↗</a>
+        </article>
+      </div>
+      <button id="celebrate-button" class="gold-button mt-12 inline-flex items-center gap-3 bg-gradient-to-r from-champagneLight to-champagne px-7 py-4 text-[10px] font-medium uppercase tracking-[.15em] text-wineDark shadow-glow" type="button">Celebrate with us <span aria-hidden="true">✦</span></button>
+    </section>
+
+    <section id="countdown" class="relative overflow-hidden bg-gradient-to-br from-wineLight via-wine to-wineDark px-5 py-28 text-center md:py-36">
+      <p class="text-[10px] tracking-[.3em] text-champagne">THE BIG DAY IS APPROACHING</p>
+      <h2 class="mt-4 font-display text-5xl md:text-6xl">Counting down to <em class="font-script text-champagne">forever</em></h2>
+      <div class="mx-auto my-14 grid max-w-4xl grid-cols-2 gap-4 sm:grid-cols-4">
+        <div class="time-box border border-champagne/60 bg-white/5 px-3 py-7"><strong id="days">00</strong><span>Days</span></div>
+        <div class="time-box border border-champagne/60 bg-white/5 px-3 py-7"><strong id="hours">00</strong><span>Hours</span></div>
+        <div class="time-box border border-champagne/60 bg-white/5 px-3 py-7"><strong id="minutes">00</strong><span>Minutes</span></div>
+        <div class="time-box border border-champagne/60 bg-white/5 px-3 py-7"><strong id="seconds">00</strong><span>Seconds</span></div>
+      </div>
+      <p id="count-note" class="text-sm text-[#d8c4bd]">Every second brings us closer to our forever.</p>
+    </section>
+
+    <section class="bg-ivory px-5 py-20 text-center text-wine">
+      <div class="h-16 font-display text-8xl leading-none text-[#d6b77e]">“</div>
+      <p class="font-script text-4xl leading-snug text-[#8d5e3b] md:text-5xl">The best thing to hold onto in life<br>is each other.</p>
+      <div class="gold-line my-7"><span>♡</span></div>
+      <p class="text-[9px] tracking-[.25em] text-[#a77b43]">LOVE · LAUGHTER · HAPPILY EVER AFTER</p>
+    </section>
+
+    <section id="rsvp" class="bg-gradient-to-br from-[#f9efe1] to-[#eee0cd] px-6 py-24 text-wineDark">
+      <div class="mx-auto max-w-lg text-center">
+        <p class="text-[10px] tracking-[.3em] text-[#a77b43]">WE WOULD BE HONOURED</p>
+        <h2 class="mt-4 font-display text-5xl md:text-6xl">Will you <em class="font-script text-[#a87942]">join us?</em></h2>
+        <p class="mt-5 text-sm leading-7 text-[#6f5a55]">Please let us know if you can celebrate this special day with us.</p>
+      </div>
+      <form id="rsvp-form" class="mx-auto mt-8 max-w-lg">
+        <label for="guest-name" class="mb-2 mt-5 block text-[10px] uppercase tracking-widest text-[#79534b]">Your Name</label>
+        <input id="guest-name" name="name" type="text" placeholder="Enter your full name" required class="w-full border border-[#d4b88f] bg-[#fffaf3] px-4 py-4 text-sm outline-none focus:border-[#9e713e] focus:ring-2 focus:ring-champagne/30">
+        <label for="guest-count" class="mb-2 mt-5 block text-[10px] uppercase tracking-widest text-[#79534b]">Number of Guests</label>
+        <select id="guest-count" name="guests" class="w-full border border-[#d4b88f] bg-[#fffaf3] text-[#a87942] px-4 py-4 text-sm outline-none focus:border-[#9e713e] cursor-pointer"><option class="cursor-pointer">1 Guest</option><option class="cursor-pointer">2 Guests</option><option class="cursor-pointer">3 Guests</option><option class="cursor-pointer">4 Guests</option><option class="cursor-pointer">5+ Guests</option></select>
+        <fieldset class="mt-5"><legend class="mb-3 text-[10px] uppercase tracking-widest text-[#79534b]">Will you attend?</legend>
+          <label class="mr-4 inline-flex items-center gap-2 text-xs text-[#6f5a55]"><input type="radio" name="attendance" value="Joyfully accepts" checked class="accent-wine"> Joyfully accepts</label>
+          <label class="inline-flex items-center gap-2 text-xs text-[#6f5a55]"><input type="radio" name="attendance" value="Regretfully declines" class="accent-wine"> Regretfully declines</label>
+        </fieldset>
+        <button type="submit" class="gold-button mt-7 flex w-full items-center justify-center gap-4 bg-gradient-to-r from-champagneLight to-champagne px-6 py-4 text-[10px] font-medium uppercase tracking-[.15em] text-[#a87942] shadow-glow">Send RSVP <span>♡</span></button>
+        <p class="mt-3 text-center text-[10px] text-[#8b7770]">Demo form: connect a form service to receive replies.</p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="border-t border-champagne/30 bg-[#22030b] px-5 py-12 text-center">
+    <div class="text-3xl text-champagne">❦</div><p class="my-2 font-script text-4xl text-champagneLight">With love, Ayesha &amp; Hamza</p>
+    <p class="text-[9px] tracking-[.25em] text-champagne">THANK YOU FOR BEING PART OF OUR STORY</p>
+    <p class="mt-7 text-[8px] tracking-[.2em] text-[#9f8278]">MADE WITH LOVE · 2026</p>
+    <p class="mt-3 text-xs tracking-wide text-[#d8c4bd]">Created by Faryal Razzaq</p>
+  </footer>
+  <button id="top-button" aria-label="Back to top" class="pointer-events-none fixed bottom-5 right-5 z-30 translate-y-3 border border-champagne bg-wine px-4 py-2 text-xl text-champagne opacity-0 transition duration-300 hover:bg-wineLight">↑</button>
+  <script src="script.js"></script>
+</body>
+</html>
